@@ -18,7 +18,7 @@
   gap: var(--gap-2);
 }
 
-.flex-column {
+.file {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -30,20 +30,20 @@
   width: 100%;
 }
 
-.h {
+.document {
   height: 100%;
 }
 
-.p-y {
+.text {
   padding-top: var(--paddingSM);
   padding-bottom: var(--paddingSM);
 }
 
-.m-b {
+.item {
   margin-bottom: 10px;
 }
 
-.m-b-2 {
+.item-2 {
   margin-bottom: 20px;
 }
  
@@ -192,6 +192,12 @@ align-self: center;
 .how__list {
   grid-column: 1 / 7;
 }
+
+.reasons__item{
+display: grid;
+gap: 10px;
+}
+
 .content__text {
 padding-top: 10px;
   font-size: var(--main-font-size);
@@ -261,12 +267,12 @@ padding-top: 10px;
 
 @media (min-width: 768px) {
   .content__text {
-    padding-top: 0px;
+    padding-top: 1px;
   }
   .container {
     padding: 0 var(--paddingMD);
   }
-  .p-y {
+  .text {
     padding-top: var(--paddingMD);
     padding-bottom: var(--paddingMD);
   }
@@ -300,6 +306,10 @@ padding-top: 10px;
   }
   .how__list {
     grid-column: 3 / 7;
+    padding-left: 11px;
+  }
+  .how__item {
+  gap: 0px;
   }
   .gallery__item {
     height: 100%;
@@ -323,6 +333,7 @@ padding-top: 10px;
   }
   .gallery__content {
     gap: var(--gap);
+    padding-left: 5px;
   }
   .grid-gallery {
     gap: var(--gap);
@@ -332,6 +343,19 @@ padding-top: 10px;
     grid-template-columns: 1fr min-content 1fr;
     gap: 75px;
   }
+  .reasons__item{
+    display: grid;
+    gap: 0px;
+    padding-left: 15px;
+    }
+  .grid {
+  gap:8px;
+  padding-left: 3px;
+  }
+  .what__item {
+  padding-top: 10px;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -347,6 +371,7 @@ padding-top: 10px;
   }
   .what__item {
     grid-column: span 2;
+    padding-left: 6px;
   }
   .footer__title {
     text-shadow: 2px 2px 0px var(--title-shadow);
@@ -355,10 +380,48 @@ padding-top: 10px;
   .grids {
     gap:90px;
   }
+  .reasons__item{
+    display: grid;
+    gap: 0px;
+    padding-left: 8px;
+    }
+  .header-section__desc {
+  max-width: 600px;
+  }
+  .container{
+  padding-right: 19px;
+  }
+  .section:not(:last-child) {
+  margin-bottom: 79px;
+  margin-top: 2px;
+  }
+  .how__list {
+  padding-left: 5px;
+  }
+  .grid {
+  padding-left: 1px;
+  }
+  
 }
-@media (width >= 1024px) {
+@media (width > 1024px) {
 .grids {
   justify-self: center;
     align-self: baseline;
 }
+.header-section__desc {
+  grid-column: 4/7;
+  max-width: 600px;
+}
+.grid {
+gap: 0px;
+}
+}
+@media (width < 768px) {
+  .reasons__item{
+    display: grid;
+    gap: 0px;
+    }
+  .item {
+    margin-bottom: 0px;
+  }
 }
