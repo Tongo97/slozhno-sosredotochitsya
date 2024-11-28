@@ -3,41 +3,18 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  max-inline-size: 1440px;  
   min-inline-size: 375px;
-  font-family: var(--font-family);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400; 
-  line-height: 130%;
-  color: var(--text-color);
+  max-inline-size: 1440px;
   margin: 0 auto;
-}
-
-.title-decor {
-  color: var(--text-secondary);
-  background-color: var(--accent-color);
-  font-weight: 700;
+  font-family: var(--main-font, 'IBM Plex Mono', monospace);
   font-size: 18px;
+  background-color: var(--bg-color, #000028);
 }
-
-.title {
-  color: var(--title-color-secondary);
-  font-size: 18px;
-}
-
-.title-decors {
-  color: var(--text-secondary);
-  background-color: var(--accent-color);
-  font-weight: 400;
-  font-size: 18px;
-}
+  
 
 h1,
 h2,
@@ -66,9 +43,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: none;
 }

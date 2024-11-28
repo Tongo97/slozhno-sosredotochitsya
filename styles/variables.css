@@ -1,17 +1,19 @@
+/*
+  Переменные для проекта
+  и их переопределение под различные устройства
+*/
+
 :root {
-  --paddingSM: 10px;
-  --paddingMD: 20px;
-  --gap: 20px;
-  --gap-2: 10px;
-  --font-family: "IBM Plex Mono", monospace;
   --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --text-secondary: var(--bg-color);
-  --accent-hover: rgba(255, 0, 112, 0.40);
-  --bgc-image: url(../images/cover-image-dark.png);
-  --title-color: #DB00FF;
-  --title-color-secondary: var(--accent-color);
-  --title-shadow: var(--accent-color);
-  --button-border-color: rgba(255, 0, 112, 0.40);
+  --accent-color: #ff0070;
+  --header-color: #db00ff;
+  --title-accent-color: #ff0070;
+  --shadow-color: #ff0070;
+  --hover-color: rgb(255, 0, 112, 0.4);
+  --main-font: 'IBM Plex Mono', sans-serif;
+  --font-color: #f1b2ce;
+  --font-accent-color: #000028;
+  --background-image: url("../images/cover-image-dark.png");
+  --header__decor-display: inline-flex;
+
 }
