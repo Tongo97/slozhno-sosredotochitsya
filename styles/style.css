@@ -203,12 +203,7 @@ h4.title-article {
   inline-size: 100%;
   block-size: 100%;
 
-}
-
-.img__tape,
-.img__street {
-  block-size: 237px;
-}
+}   
 
 .footer {
   display: grid;
@@ -323,7 +318,6 @@ h4.title-article {
 
   .img__books {
     grid-area: books;
-    block-size: 230px;
   }
 
   .img__tape {
@@ -377,11 +371,6 @@ h4.title-article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .img__books {
-    min-block-size: 315px;
-  }
- 
 
   .img__tape {
     max-block-size: calc(100% - 5px);
